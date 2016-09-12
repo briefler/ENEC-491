@@ -1,0 +1,5 @@
+data = xlsread('hourlydemand.xlsx');
+vector = mat2vec(data);
+histogram(vector)
+x = log(vector);
+histogram(x)
